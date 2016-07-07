@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
-from .models import Post
+from .models import Post, Category
 
 # Create your views here.
 def post_list(request):
@@ -10,6 +10,10 @@ def post_list(request):
 def post_detail(request, pk):
     post = get_object_or_404(Post,pk=pk)
     return render(request,'blog/post_detail.html',{'post':post})
+    
+def post_category(request, pk):
+    posts = Post.objects.filter(category=pk).order_by('-published_date')
+    return render(request, 'blog/post_category.html', {'posts': posts})
     
 def about_me(request):
     return render(request, 'blog/about_me.html',{})
