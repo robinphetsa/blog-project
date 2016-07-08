@@ -1,12 +1,16 @@
 
 body {
-    padding-left: 15px;
+    padding: 15px;
+    max-width: 1080px;
+    margin: 0 auto;
+
 }
 
 .page-header {
     background-color: #36BDEB;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    text-align: center;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -14,6 +18,7 @@ body {
     font-size: 45pt;
     text-decoration: none;
     font-family: 'Lobster', cursive;
+
 }
 
 .content {
@@ -23,6 +28,7 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Shadows Into Light', cursive;
     text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
@@ -34,6 +40,12 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
+    /*padding-left: 150px;*/
+    max-width: 1080px;
+    margin: 0 auto;
+/*    max-width: 1080px;*/
+/*margin: 0 auto !important;*/
+/*float: none !important;*/
 }
 
 .post h1 a, .post h1 a:visited {
@@ -47,7 +59,11 @@ h1, h2, h3, h4 {
     font-size: 12pt;
     border-top-style: solid;
     padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     text-indent: 50px;
+    background-color: #FAFAFA;
+
 }
 
 .right{
@@ -69,6 +85,13 @@ h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
     color: #000000 ;
     font-size: 12pt;
+    background-color: #E6EBED;
 }
 
+
 .centeritem { margin-left: auto; margin-right: auto; width: 100px; }
+
+#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+}
